@@ -12,16 +12,6 @@ namespace Test_Stavitskii.Controllers
         public IActionResult GetRequestToken()
         {
             var order = Authentication.Order();
-            
-            /*for (int i = 0; i < order.Result.Count; i++)
-            {
-                var orderList = new Result()
-                {
-                    Id = order.Result[i].Id,
-                };
-                
-            }*/
-
             return Json(order.Result);
         }
     }
